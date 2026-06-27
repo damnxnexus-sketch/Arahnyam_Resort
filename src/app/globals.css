@@ -1,0 +1,274 @@
+/* src/app/globals.css */
+
+:root {
+  /* Colors */
+  --surface: #fcf9f4;
+  --surface-dim: #dcdad5;
+  --surface-bright: #fcf9f4;
+  --surface-container-lowest: #ffffff;
+  --surface-container-low: #f6f3ee;
+  --surface-container: #f0ede8;
+  --surface-container-high: #ebe8e3;
+  --surface-container-highest: #e5e2dd;
+  --on-surface: #1c1c19;
+  --on-surface-variant: #414845;
+  --inverse-surface: #31302d;
+  --inverse-on-surface: #f3f0eb;
+  --outline: #727975;
+  --outline-variant: #c1c8c4;
+  --surface-tint: #476459;
+  
+  --primary: #001710; /* Deep Forest Green */
+  --on-primary: #ffffff;
+  --primary-container: #0f2d24; /* Forest-Tinted Shadow */
+  --on-primary-container: #779689;
+  --inverse-primary: #adcec0;
+  
+  --secondary: #685d4d;
+  --on-secondary: #ffffff;
+  --secondary-container: #f1e0cc;
+  --on-secondary-container: #6f6253;
+  
+  --tertiary: #1c1100;
+  --on-tertiary: #ffffff;
+  --tertiary-container: #372400;
+  --on-tertiary-container: #b1883f; /* Golden Sunlight */
+  
+  --background: #fcf9f4; /* Mist White */
+  --on-background: #1c1c19;
+  
+  /* Typography Variables provided by user */
+  /* Display XL */
+  --font-display-xl-size: 84px;
+  --font-display-xl-weight: 300;
+  --font-display-xl-lh: 92px;
+  --font-display-xl-ls: -0.02em;
+
+  /* Display XL Mobile */
+  --font-display-xl-mobile-size: 48px;
+  --font-display-xl-mobile-weight: 300;
+  --font-display-xl-mobile-lh: 52px;
+  --font-display-xl-mobile-ls: -0.01em;
+
+  /* Headline LG */
+  --font-headline-lg-size: 48px;
+  --font-headline-lg-weight: 400;
+  --font-headline-lg-lh: 56px;
+  --font-headline-lg-ls: 0.02em;
+
+  /* Headline LG Mobile */
+  --font-headline-lg-mobile-size: 32px;
+  --font-headline-lg-mobile-weight: 400;
+  --font-headline-lg-mobile-lh: 38px;
+  --font-headline-lg-mobile-ls: 0.02em;
+
+  /* Headline MD */
+  --font-headline-md-size: 32px;
+  --font-headline-md-weight: 400;
+  --font-headline-md-lh: 40px;
+  --font-headline-md-ls: 0.03em;
+
+  /* Body LG */
+  --font-body-lg-size: 18px;
+  --font-body-lg-weight: 300;
+  --font-body-lg-lh: 32px;
+  --font-body-lg-ls: 0.01em;
+
+  /* Body MD */
+  --font-body-md-size: 16px;
+  --font-body-md-weight: 400;
+  --font-body-md-lh: 28px;
+  --font-body-md-ls: 0.01em;
+
+  /* Label Caps */
+  --font-label-caps-size: 12px;
+  --font-label-caps-weight: 600;
+  --font-label-caps-lh: 16px;
+  --font-label-caps-ls: 0.15em;
+
+  /* Shapes */
+  --radius-sm: 0.25rem;
+  --radius-default: 0.5rem;
+  --radius-md: 0.75rem;
+  --radius-lg: 1rem;
+  --radius-xl: 1.5rem;
+  --radius-xxl: 2rem; /* Custom for Narrative Cards */
+  --radius-full: 9999px;
+
+  /* Spacing */
+  --spacing-unit: 8px;
+  --container-max: 1440px;
+  --gutter: 32px;
+  --margin-desktop: 80px;
+  --margin-tablet: 40px;
+  --margin-mobile: 24px;
+  --section-gap: 160px;
+}
+
+/* Reset and Base Styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--on-background);
+  font-family: var(--font-inter), sans-serif;
+  font-size: var(--font-body-md-size);
+  font-weight: var(--font-body-md-weight);
+  line-height: var(--font-body-md-lh);
+  letter-spacing: var(--font-body-md-ls);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Typography Classes */
+.display-xl {
+  font-family: var(--font-playfair), serif;
+  font-size: var(--font-display-xl-size);
+  font-weight: var(--font-display-xl-weight);
+  line-height: var(--font-display-xl-lh);
+  letter-spacing: var(--font-display-xl-ls);
+}
+
+.headline-lg {
+  font-family: var(--font-playfair), serif;
+  font-size: var(--font-headline-lg-size);
+  font-weight: var(--font-headline-lg-weight);
+  line-height: var(--font-headline-lg-lh);
+  letter-spacing: var(--font-headline-lg-ls);
+}
+
+.headline-md {
+  font-family: var(--font-playfair), serif;
+  font-size: var(--font-headline-md-size);
+  font-weight: var(--font-headline-md-weight);
+  line-height: var(--font-headline-md-lh);
+  letter-spacing: var(--font-headline-md-ls);
+}
+
+.body-lg {
+  font-family: var(--font-inter), sans-serif;
+  font-size: var(--font-body-lg-size);
+  font-weight: var(--font-body-lg-weight);
+  line-height: var(--font-body-lg-lh);
+  letter-spacing: var(--font-body-lg-ls);
+}
+
+.label-caps {
+  font-family: var(--font-inter), sans-serif;
+  font-size: var(--font-label-caps-size);
+  font-weight: var(--font-label-caps-weight);
+  line-height: var(--font-label-caps-lh);
+  letter-spacing: var(--font-label-caps-ls);
+  text-transform: uppercase;
+}
+
+/* Responsive Typography */
+@media (max-width: 768px) {
+  .display-xl {
+    font-size: var(--font-display-xl-mobile-size);
+    line-height: var(--font-display-xl-mobile-lh);
+    letter-spacing: var(--font-display-xl-mobile-ls);
+  }
+  .headline-lg {
+    font-size: var(--font-headline-lg-mobile-size);
+    line-height: var(--font-headline-lg-mobile-lh);
+    letter-spacing: var(--font-headline-lg-mobile-ls);
+  }
+  :root {
+    --section-gap: 100px;
+  }
+}
+
+/* Grid & Layout System */
+.container {
+  max-width: var(--container-max);
+  margin: 0 auto;
+  padding: 0 var(--margin-desktop);
+}
+
+.grid-12 {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: var(--gutter);
+}
+
+@media (max-width: 1024px) {
+  .container {
+    padding: 0 var(--margin-tablet);
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0 var(--margin-mobile);
+  }
+  .grid-12 {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+  }
+}
+
+/* Utilities */
+.section-spacing {
+  margin-top: var(--section-gap);
+  margin-bottom: var(--section-gap);
+}
+
+/* Glassmorphism & Ambient Shadows */
+.glass-panel {
+  background: rgba(252, 249, 244, 0.7); /* Mist White with 70% opacity */
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.ambient-shadow {
+  /* Forest-Tinted shadow with large blur radius */
+  box-shadow: 0 20px 40px rgba(15, 45, 36, 0.08); 
+}
+
+/* Buttons */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px 32px;
+  border-radius: var(--radius-default);
+  text-decoration: none;
+  transition: all 500ms ease-in-out;
+  cursor: pointer;
+  border: none;
+  font-family: var(--font-inter), sans-serif;
+  font-size: var(--font-label-caps-size);
+  font-weight: var(--font-label-caps-weight);
+  letter-spacing: var(--font-label-caps-ls);
+  text-transform: uppercase;
+}
+
+.btn-primary {
+  background-color: var(--primary);
+  color: var(--on-primary);
+}
+
+.btn-primary:hover {
+  background-color: var(--primary-container);
+  box-shadow: 0 10px 20px rgba(15, 45, 36, 0.15);
+}
+
+.btn-ghost {
+  background-color: transparent;
+  border: 1px solid var(--surface-dim);
+  color: var(--primary);
+}
+
+.btn-ghost:hover {
+  background-color: rgba(252, 249, 244, 0.8);
+  border-color: var(--primary);
+}
