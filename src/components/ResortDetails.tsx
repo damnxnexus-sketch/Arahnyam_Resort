@@ -9,11 +9,11 @@ export default function ResortDetails() {
       <div className={styles.wrapper}>
         <div className={styles.textContent}>
           <span className="label-caps" style={{ color: 'var(--primary)', marginBottom: '16px', display: 'block' }}>The Sanctuary</span>
-          <h2 className="headline-lg">A retreat into the primeval forest.</h2>
+          <h2 className="headline-lg">Your calm nature retreat in the forests of Bhimtal.</h2>
           <p className="body-lg" style={{ marginTop: '24px', color: 'var(--on-surface-variant)' }}>
-            Arahnyam Editorial Luxury is not just a resort in Bhimtal; it is a philosophy of slow living. 
-            We have stripped away the noise of urban life to offer you vast expanses of tranquility, 
-            blending the minimalist elegance of glassmorphism with the raw, untamed beauty of nature.
+            Arahnyam Editorial Luxury is widely recognized as the best resort in Bhimtal for travelers seeking a calm nature retreat. 
+            Nestled deep within 15 acres of primeval pine and oak forest canopy, this affordable luxury resort in Bhimtal blends modern comfort with raw, untamed beauty.
+            Along with our tranquil accommodations, our in-house restaurant serves a mouthwatering selection of tasty vegetarian and non-vegetarian food, prepared fresh to order by local chefs.
           </p>
           <div className={styles.stats}>
             <div>
@@ -22,7 +22,11 @@ export default function ResortDetails() {
             </div>
             <div>
               <span className="headline-md">1</span>
-              <span className="label-caps">Infinity Pool</span>
+              <span className="label-caps">Serene Pool</span>
+            </div>
+            <div>
+              <span className="headline-md">1</span>
+              <span className="label-caps">Restaurant (Veg/Non-Veg)</span>
             </div>
           </div>
           <div style={{ marginTop: '48px' }}>
@@ -33,8 +37,8 @@ export default function ResortDetails() {
         <div className={styles.imageCard}>
           <div className={styles.imageWrapper}>
             <Image 
-              src="/nature.png" 
-              alt="Misty forest in the valleys of Bhimtal" 
+              src="/Pics/full_view.JPG" 
+              alt="Misty forest view of Arahnyam Resort in Bhimtal" 
               fill
               className={styles.image}
             />

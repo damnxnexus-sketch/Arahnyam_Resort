@@ -27,11 +27,11 @@ export default function Navigation() {
         <nav className={styles.navLinks}>
           <Link href="/bhimtal" className="label-caps">The Resort</Link>
           <Link href="/cottages" className="label-caps">Cottages</Link>
-          <Link href="/pool-side" className="label-caps">Infinity Pool</Link>
+          <Link href="/pool-side" className="label-caps">The Pool</Link>
           <Link href="/contact" className="label-caps">Contact</Link>
         </nav>
         <div className={styles.cta}>
-          <a href="https://wa.me/1234567890" target="_blank" rel="noopener noreferrer" className="btn btn-ghost" style={{ padding: '12px 24px' }}>
+          <a href="https://wa.me/919557345422" target="_blank" rel="noopener noreferrer" className="btn btn-ghost" style={{ padding: '12px 24px' }}>
             Book Now
           </a>
         </div>

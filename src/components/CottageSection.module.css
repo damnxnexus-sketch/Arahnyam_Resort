@@ -82,10 +82,11 @@
     height: 350px;
   }
   
-  .glassCard {
+  .glassCard, .glassCardLeft {
     position: relative;
     bottom: auto;
     right: auto;
+    left: auto;
     max-width: 100%;
     border-radius: 0 0 var(--radius-lg) var(--radius-lg);
     border: none;
@@ -95,4 +96,24 @@
   .amenities {
     grid-template-columns: 1fr;
   }
+}
+
+.cardsWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 96px; /* High-end breathing room between stays */
+}
+
+.glassCardLeft {
+  position: absolute;
+  bottom: 40px;
+  left: 40px;
+  background: rgba(252, 249, 244, 0.85);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  padding: 48px;
+  border-radius: var(--radius-xl);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  max-width: 500px;
+  box-shadow: 0 10px 30px rgba(15, 45, 36, 0.05);
 }

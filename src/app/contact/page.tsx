@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import PageHeader from "@/components/PageHeader";
 
 export const metadata: Metadata = {
-  title: "Book Resort in Bhimtal | Contact Arahnyam",
-  description: "Contact Arahnyam Editorial Luxury. Book your stay at the premier pool side resort in Bhimtal via WhatsApp or call.",
-  keywords: "book resort in bhimtal, contact arahnyam resort, bhimtal resort booking",
+  title: "Book Best Resort in Bhimtal | Contact Arahnyam Resort",
+  description: "Book your calm nature retreat stay at Arahnyam, the best resort in Bhimtal. Contact our reservation desk on call or WhatsApp at +91 9557345422 today.",
+  keywords: "best resort in bhimtal, resort in bhimtal, contact arahnyam resort, book resort in bhimtal, nature retreat bhimtal",
 };
 
 export default function ContactPage() {
@@ -13,7 +13,7 @@ export default function ContactPage() {
       <PageHeader 
         title="Reserve Your Stay" 
         subtitle="Bookings & Enquiries" 
-        imageSrc="/hero.png" 
+        imageSrc="/Pics/Arahnyam_Main_Building.JPG" 
       />
       
       <section className="section-spacing container">
@@ -21,23 +21,23 @@ export default function ContactPage() {
           <div style={{ gridColumn: 'span 5' }}>
              <h2 className="headline-md">Get in touch</h2>
              <p className="body-md" style={{ marginTop: '16px', color: 'var(--on-surface-variant)', marginBottom: '48px' }}>
-               For bespoke experiences, early bookings, and personalized requests, our concierge is ready to assist you.
+                Book your calm nature forest retreat stay at Arahnyam, the premier affordable luxury resort in Bhimtal. Our reservation desk is ready to assist you.
              </p>
              
              <div style={{ display: 'flex', flexDirection: 'column', gap: '32px' }}>
                <div>
                  <span className="label-caps" style={{ color: 'var(--primary)', display: 'block', marginBottom: '8px' }}>WhatsApp Booking</span>
-                 <a href="https://wa.me/1234567890" target="_blank" rel="noopener noreferrer" className="btn btn-primary">Chat on WhatsApp</a>
+                 <a href="https://wa.me/919557345422" target="_blank" rel="noopener noreferrer" className="btn btn-primary">Chat on WhatsApp</a>
                </div>
                
                <div>
-                 <span className="label-caps" style={{ color: 'var(--primary)', display: 'block', marginBottom: '8px' }}>Direct Line</span>
-                 <p className="body-lg">+91 123 456 7890</p>
+                 <span className="label-caps" style={{ color: 'var(--primary)', display: 'block', marginBottom: '8px' }}>Direct Booking Line</span>
+                 <p className="body-lg"><a href="tel:+919557345422" style={{ color: 'inherit', textDecoration: 'none', fontWeight: '500' }}>+91 9557345422</a></p>
                </div>
                
                <div>
                  <span className="label-caps" style={{ color: 'var(--primary)', display: 'block', marginBottom: '8px' }}>Location</span>
-                 <p className="body-lg">Arahnyam Editorial Luxury,<br />Bhimtal Valleys, Uttarakhand, India</p>
+                 <p className="body-lg">Arahnyam Editorial Luxury,<br />Hidden Forest, Bhimtal, Uttarakhand, India</p>
                </div>
              </div>
           </div>
