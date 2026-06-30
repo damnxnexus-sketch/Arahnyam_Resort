@@ -23,7 +23,7 @@
   width: 100%;
   height: 100%;
   background: radial-gradient(circle at center, var(--primary-container) 0%, var(--primary) 100%);
-  z-index: -2;
+  z-index: -3;
 }
 
 .heroVideo {
@@ -69,4 +69,12 @@
 .actions {
   display: flex;
   gap: 16px;
+}
+
+@media (max-width: 768px) {
+  .videoPlaceholder {
+    background-image: url('/Pics/full_view.JPG');
+    background-size: cover;
+    background-position: center;
+  }
 }

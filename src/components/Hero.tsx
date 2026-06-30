@@ -6,17 +6,16 @@ export default function Hero() {
   return (
     <section className={styles.heroSection}>
       <div className={styles.imageWrapper}>
-        {/* 
-        Uncomment the video element below and place your video file in `/public/hero-video.mp4`
         <video 
-          src="/hero-video.mp4" 
+          src="/1111_hero.mp4" 
           autoPlay 
           loop 
           muted 
           playsInline 
+          preload="metadata"
+          poster="/Pics/full_view.JPG"
           className={styles.heroVideo}
         /> 
-        */}
         <div className={styles.videoPlaceholder}></div>
         <div className={styles.overlay}></div>
       </div>
