@@ -25,6 +25,11 @@ export default function Home() {
             <p className="body-md">
               WhatsApp Support: <a href="https://wa.me/919557345422" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--primary)', textDecoration: 'none', fontWeight: '500' }}>+91 9557345422</a>
             </p>
+            <p className="body-md" style={{ marginTop: '12px' }}>
+              <a href="https://maps.app.goo.gl/v27rJfrWVMCfu1jS8" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--primary)', textDecoration: 'none', marginRight: '16px', fontWeight: '500' }}>Get Directions on Google Maps</a>
+              •
+              <a href="https://www.instagram.com/arahnyam/" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--primary)', textDecoration: 'none', marginLeft: '16px', fontWeight: '500' }}>Follow on Instagram</a>
+            </p>
           </div>
           <div style={{ marginTop: '48px' }}>
             <span className="headline-md">ARAHNYAM</span>

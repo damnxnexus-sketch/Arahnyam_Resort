@@ -39,11 +39,29 @@ export default function ContactPage() {
                  <span className="label-caps" style={{ color: 'var(--primary)', display: 'block', marginBottom: '8px' }}>Location</span>
                  <p className="body-lg">Arahnyam Editorial Luxury,<br />Hidden Forest, Bhimtal, Uttarakhand, India</p>
                </div>
+               
+               <div>
+                 <span className="label-caps" style={{ color: 'var(--primary)', display: 'block', marginBottom: '8px' }}>Instagram</span>
+                 <p className="body-lg">
+                   <a href="https://www.instagram.com/arahnyam/" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--primary)', textDecoration: 'none', fontWeight: '500' }}>
+                     @arahnyam
+                   </a>
+                 </p>
+               </div>
              </div>
           </div>
           
-          <div style={{ gridColumn: 'span 7', background: 'rgba(252, 249, 244, 0.7)', backdropFilter: 'blur(20px)', WebkitBackdropFilter: 'blur(20px)', borderRadius: 'var(--radius-xl)', padding: '40px', border: '1px solid rgba(255, 255, 255, 0.4)', boxShadow: '0 20px 40px rgba(15, 45, 36, 0.05)', minHeight: '400px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-             <p className="headline-md" style={{ color: 'var(--on-surface-variant)', textAlign: 'center' }}>Map Integration Placeholder<br /><span className="body-md">(Custom Mapbox/Leaflet without urban markers)</span></p>
+          <div style={{ gridColumn: 'span 7', width: '100%', minHeight: '480px', borderRadius: 'var(--radius-xl)', overflow: 'hidden', boxShadow: '0 20px 40px rgba(15, 45, 36, 0.05)', border: '1px solid rgba(255, 255, 255, 0.4)' }}>
+             <iframe 
+               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3480.9996614486987!2d79.5311319!3d29.3640006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39a0997213b1b365%3A0x3b59645108836b2e!2sArahnyam%20(Pool%20Side%20Cafe%20%26%20Cottages)!5e0!3m2!1sen!2sin!4v1719760000000!5m2!1sen!2sin" 
+               width="100%" 
+               height="480" 
+               style={{ border: 0 }} 
+               allowFullScreen={true} 
+               loading="lazy" 
+               referrerPolicy="no-referrer-when-downgrade"
+               title="Arahnyam Location Map"
+             />
           </div>
         </div>
       </section>
